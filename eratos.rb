@@ -1,4 +1,9 @@
 class Eratos
+
+  def self.prime_numbers(limit)
+    new(limit).prime_numbers
+  end
+
   def initialize(limit)
     @limit = limit.to_i
   end
@@ -22,5 +27,5 @@ end
 
 n, = ARGV
 if n
-  puts Eratos.new(n).prime_numbers.join(", ")
+  puts Eratos.prime_numbers(n).join(", ")
 end
