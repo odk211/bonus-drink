@@ -19,3 +19,8 @@ class Eratos
   end
 
 end
+
+n, = ARGV
+if n
+  puts Eratos.new(n).prime_numbers.join(", ")
+end
